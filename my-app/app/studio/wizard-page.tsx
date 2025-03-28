@@ -389,6 +389,7 @@ const DesignSettingsStep = () => {
                   checked={![
                     'blue', 'purple', 'green', 'red', 'gray'
                   ].includes(colorTheme)}
+                  onChange={() => setColorTheme('custom')}
                   className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300"
                 />
                 <label htmlFor="color-custom" className="ml-2 text-sm text-gray-700">
@@ -484,6 +485,7 @@ const DesignSettingsStep = () => {
                   checked={![
                     'modern', 'classic', 'minimal', 'creative'
                   ].includes(typography)}
+                  onChange={() => setTypography('custom')}
                   className="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-300"
                 />
                 <label htmlFor="font-custom" className="ml-2 text-sm text-gray-700">
